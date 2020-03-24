@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activity.HainActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/ha_vp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9">
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <RadioGroup
+        android:background="@drawable/my_bg"
+        android:id="@+id/ha_rg"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RadioButton
+                android:drawableLeft="@drawable/mvselector"
+            android:checked="true"
+
+            android:text="电影"
+            android:id="@+id/ha_rb_film"
+            android:gravity="center"
+            android:button="@null"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:drawableLeft="@drawable/myyselector"
+
+            android:text="影院"
+            android:id="@+id/ha_rb_cinema"
+            android:gravity="center"
+            android:button="@null"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:drawableLeft="@drawable/miselector"
+
+          android:text="我的"
+            android:id="@+id/ha_rb_mine"
+            android:gravity="center"
+            android:button="@null"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </RadioGroup>
+</LinearLayout>
